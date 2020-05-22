@@ -2,78 +2,231 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE-edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE-edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="HandheldFriendly" content="true">
 		<title>Personal Portfolio </title>
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 		<link rel = "stylesheet" type="text/css" href="myportfolio.css">
 	</head>
 	<body>
-		<header>
-			<div class="container">
-				<nav class="flex items-center justify-between">
-					<div class="left flex items-center">
-						<div class="brand-name">
-							<h1>H D EXPLORERS</h1>
-						</div>
-						<div>
-							<a href='#'>Home</a>
-							<a href='#'>About</a>
-							<a href='#'>Services</a>
-							<a href='#'>Pages</a>
-							<a href='#'>Blog</a>
-						</div>
 
-					</div>
-					<div class="right">
-						<button class="btn btn-primary">Contact</button>
-					</div>
-
-				</nav>
-				<div class="hero flex items-center justify-between">
-					<div class="left flex-1 flex justify-center">
-						<img src="my1.jpg" alt="">
-					</div>
-					<div class="right flex-1">
-						<h6>Hitesh Dhameja</h6>
-						<h1>I'm a Info Tech <span>Student</span></h1>
-						<p>Persuing my studies for 2nd Year. Well,I am known for my dedication on task assigned to me and 
-							and ease with which I complete my every project.I'm man of my words
-							and complete the henceforth assigned before deadline and that too with
-							perfection.</p>
-						<div>
-							<button class="btn btn-secondary">DOWNLOAD CV</button>
-						</div>
-					</div>
+		<div class="site-main-wrappar">
+			<button class="hamberger">
+				<img src="navicon.png" alt="">
+			</button>
+			<div class="mobile-nav">
+				<button class="times"><img src="close.webp" alt=""></button>
+				<div class="brand-name">
+					<h1>H D EXPLORERS</h1>
 				</div>
+				<ul>
+					<li><a href='#'>Home</a></li>
+					<li><a href='#about'>About</a></li>
+					<li><a href='#service'>Services</a></li>
+					<li><a href='#pages'>Pages</a></li>
+					<li><a href='#work'>Work</a></li>
+					<li><a href='#contact'>Contact</a></li>
+				</ul>
 			</div>
-		</header>
-		<section class="about">
-			<div class="container flex items-center">
-				<div class="flex-1">
-					<img class="about-me-img" src="my2.jpg" alt="">
+			<header>
+				<div class="container">
+					<nav id="main-nav" class="flex items-center justify-between">
+						<div class="left flex items-center">
+							<div class="brand-name">
+								<h1>H D EXPLORERS</h1>
+							</div>
+							<div>
+								<a href='#'>Home</a>
+								<a href='#about'>About</a>
+								<a href='#service'>Services</a>
+								<a href='#pages'>Pages</a>
+								<a href='#work'>Work</a>
+							</div>
+	
+						</div>
+						<div class="right">
+							<button class="btn btn-primary">Contact</button>
+						</div>
+	
+					</nav>
+					<div class="hero flex items-center justify-between">
+						<div class="left flex-1 flex justify-center">
+							<img src="my1.jpg" alt="">
+						</div>
+						<div class="right flex-1">
+							<h6>Hitesh Dhameja</h6>
+							<h1>I'm a Info Tech <span>Student</span></h1>
+							<p>Persuing my studies for 2nd Year. Well,I am known for my dedication on task assigned to me and 
+								and ease with which I complete my every project.I'm man of my words
+								and complete the henceforth assigned before deadline and that too with
+								perfection.</p>
+							<div>
+								<button class="btn btn-secondary">DOWNLOAD CV</button>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="flex-1">
-					<h1>About <span>Me</span></h1>
-					<h3>Hello I'm Hitesh Dhameja</h3>
-					<p>Persuing my studies for 2nd Year. Well,I am known for my dedication on task assigned to me and 
-						and ease with which I complete my every project.I'm man of my words
-						and complete the henceforth assigned before deadline and that too with
-						perfection.
-						</p>
-						<p>Currently,wiping my hands on web development.
-						Past Projects: 1)Website for auditorium and smart classroom booking
-									   2)Railway Reservation System
+			</header>
+			<section id= "about" class="about">
+				<div class="container flex items-center about-inner-wrap">
+					<div class="flex-1 right">
+						<img class="about-me-img" src="my2.jpg" alt="">
+					</div>
+					<div class="flex-1">
+						<h1>About <span>Me</span></h1>
+						<h3>Hello I'm Hitesh Dhameja</h3>
+						<p>I'm well-known for completion of work before any due satisfying the client.
+							I also love to write content on various real-life scenario and can convince anybody
+						with my words.My hobbies include programing,sketching,quote-writing and many more... </p>
+						<p>Currently,wiping my hands on web development.</p>
+						<p>Past Projects: 1)Website for auditorium and smart classroom booking
+										   2)Railway Reservation System
 						Language known perfectly: C,JAVA,PYTHON,SQL,more to join...
 						</p>
-					<div class="social">
-						<a href="#"><img src="fb.PNG" alt=""></a>
-						<a href="#"><img src="insta.PNG" alt=""></a>
-						<a href="#"><img src="twitter.PNG" alt=""></a>
-						<a href="#"><img src="whatsapp_4.PNG" alt=""></a>
+						<div class="social">
+							<a href="#"><img src="fb.PNG" alt=""></a>
+							<a href="#"><img src="insta.PNG" alt=""></a>
+							<a href="#"><img src="twitter.PNG" alt=""></a>
+							<a href="#"><img src="whatsapp_4.PNG" alt=""></a>
+						</div>
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
+			<section id="service" class="services">
+				<div class="container">
+					<h1 class="section-heading">Our <span>Services</span></h1>
+					<p>We provide hight standard clean website for your business solutions</p>
+					<div class="card-wrapper">
+						<div class="card">
+							<img src="b.png" alt="">
+							<h2>UI Design</h2>
+							<p>There are number of designs can be imagined which never be felt old are made by me.</p>
+						</div>
+						<div class="card">
+							<img src="a.png" alt="">
+							<h2>Web Development</h2>
+							<p>Make over all website with attractive webpages and functioning and hosting on free domains.</p>
+						</div>
+						<div class="card">
+							<img src="c.png" alt="">
+							<h2>Python</h2>
+							<p>Any program or database and UI with python under tkinter will be made as per the requirements.</p>
+						</div>
+						<div class="card">
+							<img src="customer.png" alt="">
+							<h2>SQL-Database</h2>
+							<p>Database making and handling for company,schools or anyother management.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="pages" class="web-developing">
+				<h1>I'm available for Web-developing projects</h1>
+				<p>We provide high standard clean website along with hosting on free domains.</p>
+				<button class="btn btn-primary">Download CV</button>
+			</section>
+			<section id="work" class="work">
+				<div class="container">
+					<h1 class="section-heading"><span>Our</span> Works</h1>
+					<p>We provide commendable work with our projects</p>
+					
+					<div class="card-wrapper">
+						<div class="card">
+							<div class="overlay">
+								<span>Category</span>
+								<a href="#">Railway-Reservation-System-By-Tkinter</a>
+							</div>
+							<img src="p1.PNG" alt="">
+						</div>
+						<div class="card">
+							<div class="overlay">
+								<span>Category</span>
+								<a href="#">Railway-Reservation-System-By-Tkinter</a>
+							</div>
+							<img src="p2.PNG" alt="">
+						</div>
+						<div class="card">
+							<div class="overlay">
+								<span>Category</span>
+								<a href="#">Railway-Reservation-System-By-Tkinter</a>
+							</div>
+							<img src="p3.PNG" alt="">
+						</div>
+						<div class="card">
+							<div class="overlay">
+								<span>Category</span>
+								<a href="#">Auditorium and Classroom Booking Website</a>
+							</div>
+							<img src="p4.PNG" alt="">
+						</div>
+						<div class="card">
+							<div class="overlay">
+								<span>Category</span>
+								<a href="#">Auditorium and Classroom Booking Website</a>
+							</div>
+							<img src="p5.PNG" alt="">
+						</div>
+						<div class="card">
+							<div class="overlay">
+								<span>Category</span>
+								<a href="#">Auditorium and Classroom Booking Website</a>
+							</div>
+							<img src="p6.PNG" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="contact" class="contact">
+				<div class="container">
+					<h1 class="section-heading">Contact <span>Us</span></h1>
+					<p>We provide high standard clean website for business solutions</p>
+					<div class="card-wrapper">
+						<div class="card">
+							<img src="contact.png" alt="">
+							<h1>Call Us On</h1>
+							<h6>+91 7303443443</h6>
+						</div>
+						<div class="card">
+							<img src="email1.png" alt="">
+							<h1>Email Us At</h1>
+							<h6>hitu2085@gmail.com</h6>
+						</div>
+						<div class="card">
+							<img src="off1.webp" alt="">
+							<h1>Visit Office</h1>
+							<h6>103, khar road, Navi-Mumbai-400032, Mahrashtra</h6>
+						</div>
+					</div>
+					<form action="">
+						<div class="input-wrap">
+							<input type="text" placeholder="Your Name">
+							<input type="email" placeholder="Your email">
+						</div>
+						<div class="input-wrap2">
+							<input type="text" placeholder="Your Subject...">
+							<textarea name="" id="" cols="30" rows="10" placeholder="Your Message..."></textarea>
+						</div>
+						<div class="btn-wrappar">
+							<button class="btn btn-primary">Send Message</button>
+						</div>
+					</form>
+				</div>
+			</section>
+			<footer>
+				<div class="footer-socials">
+					<a href="#"><img src="fb.PNG" alt=""></a>
+					<a href="#"><img src="insta.PNG" alt=""></a>
+					<a href="#"><img src="twitter.PNG" alt=""></a>
+					<a href="#"><img src="whatsapp_4.PNG" alt=""></a>
+				</div>
+				<div class="copyright">
+					Copyright 2020 H D Explorers.All Right Reserved.
+				</div>
+			</footer>
+		</div>
+			
 	</body>
+	<script src = "myporfolio.js"></script>
+</html>
