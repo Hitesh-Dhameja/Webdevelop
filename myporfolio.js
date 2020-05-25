@@ -8,3 +8,6 @@ hamberger.addEventListener('click',function(){
 times.addEventListener('click',function(){
     mobile.classList.remove('open');
 });
+function submission(){
+    alert("Your request is under process");
+}
