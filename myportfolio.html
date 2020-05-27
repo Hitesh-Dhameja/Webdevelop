@@ -11,7 +11,31 @@
 		<link rel = "stylesheet" type="text/css" href="myportfolio.css">
 	</head>
 	<body>
-
+		<!--Loader Part-->
+		<div id="preloader" class="loader">
+			<div class="loader-inner">
+				<div class="loader-block">
+					<span class="block-1"></span>
+					<span class="block-2"></span>
+					<span class="block-3"></span>
+					<span class="block-4"></span>
+					<span class="block-5"></span>
+					<span class="block-6"></span>
+					<span class="block-7"></span>
+					<span class="block-8"></span>
+					<span class="block-9"></span>
+					<span class="block-10"></span>
+					<span class="block-11"></span>
+					<span class="block-12"></span>
+					<span class="block-13"></span>
+					<span class="block-14"></span>
+					<span class="block-15"></span>
+					<span class="block-16"></span>
+				</div>
+			</div>
+		</div>
+		
+		<!--Modal Part-->
 		<div id="myModal" class="modal">
 			<div class="modal-content">
 				<span class="close">&times;</span><br><br>
@@ -27,7 +51,8 @@
 				</div>
   			</div>
 		</div>
-
+		
+		<!--Navbar when screen size is reduced-->
 		<div class="site-main-wrappar">
 			<button class="hamberger">
 				<img src="navicon.png" alt="">
@@ -41,13 +66,15 @@
 					<li><a href='#' data-text="Home">Home</a></li>
 					<li><a href='#about' data-text="About">About</a></li>
 					<li><a href='#service' data-text="Servies">Services</a></li>
-					<li><a href='#pages' data-text="Pages">Pages</a></li>
-					<li><a href='#work' data-text="Work">Work</a></li>
-					<li><a href='#contact' data-text="Contact">Contact</a></li>
+					<li><a href='#status' data-text="Status">Status</a></li>
+					<li><a href='#Projects' data-text="Projects">Projects</a></li>
+					<li><a href='#contact1' data-text="Contact">Contact</a></li>
 				</ul>
 			</div>
+
+			<!--Home Page-->
 			<header>
-				<div class="container">
+				<div id="navbar" class="container">
 					<nav id="main-nav" class="flex items-center justify-between">
 						<div class="left flex items-center">
 							<div class="brand-name">
@@ -57,13 +84,13 @@
 								<a href='#'>Home</a>
 								<a href='#about'>About</a>
 								<a href='#service'>Services</a>
-								<a href='#pages'>Pages</a>
-								<a href='#work'>Work</a>
+								<a href='#status'>Status</a>
+								<a href='#Projects'>Projects</a>
 							</div>
 	
 						</div>
 						<div class="right">
-							<button class="btn btn-primary">Contact</button>
+							<button class="btn btn-primary"><a href='#contact1'>Contact</a></button>
 						</div>
 	
 					</nav>
@@ -79,12 +106,14 @@
 								and complete the henceforth assigned before deadline and that too with
 								perfection.</p>
 							<div>
-								<button class="btn btn-secondary">DOWNLOAD CV</button>
+								<button onclick="cv()" class="btn btn-secondary">DOWNLOAD CV</button>
 							</div>
 						</div>
 					</div>
 				</div>
 			</header>
+
+			<!--About Page-->
 			<section id= "about" class="about">
 				<div class="container flex items-center about-inner-wrap">
 					<div class="flex-1 right">
@@ -110,6 +139,8 @@
 					</div>
 				</div>
 			</section>
+
+			<!--Services Provided Page-->
 			<section id="service" class="services">
 				<div class="container">
 					<h1 class="section-heading">Our <span>Services</span></h1>
@@ -138,14 +169,18 @@
 					</div>
 				</div>
 			</section>
-			<section id="pages" class="web-developing">
+
+			<!--Current Status Page-->
+			<section id="status" class="web-developing">
 				<h1>I'm available for Web-developing projects</h1>
 				<p>We provide high standard clean website along with hosting on free domains.</p>
-				<button class="btn btn-primary">Download CV</button>
+				<button onclick="cv()" class="btn btn-primary">Download CV</button>
 			</section>
-			<section id="work" class="work">
+			
+			<!--Projects Page-->
+			<section id="Projects" class="work">
 				<div class="container">
-					<h1 class="section-heading"><span>Our</span> Works</h1>
+					<h1 class="section-heading"><span>Our</span> Projects</h1>
 					<p>We provide commendable work with our projects</p>
 					
 					<div class="card-wrapper">
@@ -194,7 +229,9 @@
 					</div>
 				</div>
 			</section>
-			<section id="contact" class="contact">
+
+			<!--Contact Us Page-->
+			<section id="contact1" class="contact">
 				<div class="container">
 					<h1 class="section-heading">Contact <span>Us</span></h1>
 					<p>We provide high standard clean website for business solutions</p>
@@ -230,6 +267,8 @@
 					</form>
 				</div>
 			</section>
+
+			<!--CopyRight Section-->
 			<footer>
 				<div class="footer-socials">
 					<a href="#"><img src="fb.PNG" alt=""></a>
@@ -238,12 +277,13 @@
 					<a href="#"><img src="whatsapp_4.PNG" alt=""></a>
 				</div>
 				<div class="copyright">
-					Copyright 2020 H D Explorers.All Right Reserved.
+					<p>&copy; H D Explorers 2020-All Right Reserved.</p>
 				</div>
 			</footer>
 		</div>
 			
 	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src = "myporfolio.js"></script>
 	
 </html>
